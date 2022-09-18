@@ -120,7 +120,7 @@ export default function Navbar() {
             <input type="text" placeholder="Search ... " />
           </div>
           <div className="adidas">
-            <img src="/images/adidas.png" alt="adidas logo" />
+            <img src={process.env.PUBLIC_URL + '/images/adidas.png'} alt="adidas logo" />
           </div>
           <section className="shopping">
             <div onClick={showHideCart} aria-hidden="true">

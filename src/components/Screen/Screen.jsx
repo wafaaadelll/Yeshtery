@@ -11,7 +11,7 @@ export default function Screen() {
       <React.Suspense
         fallback={
           <div style={{ textAlign: "center" }}>
-            <img src="/images/load.gif" alt="" style={{ width: "300px" }} />
+            <img src={process.env.PUBLIC_URL + '/images/load.gif'} alt="" style={{ width: "300px" }} />
           </div>
         }
       >

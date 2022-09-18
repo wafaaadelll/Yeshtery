@@ -33,7 +33,7 @@ export default function Items() {
                       )}
                     </div>
                     <section>
-                      <img src="/images/adidas.png" alt="adidas logo" />
+                      <img src={process.env.PUBLIC_URL + '/images/adidas.png'} alt="adidas logo" />
                     </section>
                   </section>
 

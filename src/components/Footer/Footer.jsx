@@ -6,6 +6,7 @@ import {
   FaSearch,
   FaTwitter,
 } from "react-icons/fa";
+import { HiOutlinePlay, HiPaperAirplane } from "react-icons/hi";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -36,8 +37,8 @@ export default function Footer() {
           </div>
           <div>
             <div className="search">
-              <FaSearch className="icon" />
-              <input type="text" placeholder="Search ... " />
+              <button className="subscribe">Subscribe <HiOutlinePlay/></button>
+              <input type="text" placeholder="Enter Your Email " />
             </div>
             <section className="right">
               <div className="rl">
@@ -51,25 +52,38 @@ export default function Footer() {
               </div>
               <div className="rr">
                 <a>
-                  <img src="/images/face.png" alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/face.png'} alt="" />
                   /YESHTERY
                 </a>
                 <a>
-                  <img src="/images/linked.png" alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/linked.png'} alt="" />
                   /YESHTERY
                 </a>
                 <a>
-                  <img src="/images/instgram.webp" alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/instgram.webp'} alt="" />
                   /YESHTERY
                 </a>
                 <a>
-                  <img src="/images/twitterr.png" alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/twitterr.png'} alt="" />
                   /YESHTERY
                 </a>
               </div>
             </section>
           </div>
         </section>
+        <div className="contain">
+          <div>
+            <p>@ 2021 yeshtery all rights reserved.</p>
+          </div>
+          <div className="logos">
+            <img src={process.env.PUBLIC_URL + '/images/cash.png'} alt="" />
+            <img src={process.env.PUBLIC_URL + '/images/visa.png'} alt="" />
+            <img src={process.env.PUBLIC_URL + '/images/mastr.png'} alt="" />
+          </div>
+          <div>
+            <h3>Bowered by Nasnav</h3>
+          </div>
+        </div>
       </section>
     </div>
   );

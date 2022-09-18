@@ -49,7 +49,7 @@ function Product() {
         <div className="degree">
           <label className="btn" htmlFor="modal-1">
             <img
-              src="/images/360.svg"
+              src={process.env.PUBLIC_URL + '/images/360.svg'}
               alt="360degree"
               style={{ width: "45px" }}
             />
@@ -70,7 +70,7 @@ function Product() {
       <div>
         <div className="Dtl">
           <img
-            src="/images/adidas.png"
+            src={process.env.PUBLIC_URL + '/images/adidas.png'}
             alt="adidas logo"
             style={{ width: "70px" }}
           />
