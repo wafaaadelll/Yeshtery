@@ -1,0 +1,79 @@
+$--primary:yellow;
+@mixin Footer-links {
+    display: block;
+                    color: rgb(225, 225, 225);
+                    font-size: 14px;
+                    margin-top: 10px;
+                    cursor: pointer;
+}
+#footer{
+    background-color: rgb(49, 49, 49);
+    padding: 10px 0;
+    margin-top: 40px;
+    .container{
+        width: 1200px;
+        display: flex;
+        .left{
+            border-right: 1px solid gray;
+            padding-right: 25px;
+            width: 50%;
+            color: rgb(225, 225, 225);
+            h1{
+                color: $--primary;
+                font-size: 40px;
+                font-family:monospace;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        .search{
+            position: relative;
+            margin-left: 40px;
+            margin-top: 50px;
+            .icon{
+                position: absolute;
+                z-index: 1;
+                top: 6px;
+                left: 10px;
+            }
+           input{
+            padding: 5px 30px;
+            border: 1px solid rgb(216, 216, 216);
+            border-radius: 50px;
+            width: 400px;
+        }
+        }
+        .right{
+            padding-left: 25px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            .rl{
+                border-right: 1px solid gray;
+                width: 50%;
+                a{
+                    @include Footer-links()
+                }
+                a:hover{
+                    color: $--primary;
+                }
+            }
+            .rr{
+                padding-left: 30px;
+                a{
+                    @include Footer-links();
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width:25px;
+                        margin-right: 10px;
+                    }
+                }
+                a:hover{
+                    color: $--primary;
+                }
+            }
+        }
+    }
+}

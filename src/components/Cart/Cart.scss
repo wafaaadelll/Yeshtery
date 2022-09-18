@@ -1,0 +1,75 @@
+$--pripmary : yellow;
+$--secondary : purple;
+.cart__wrapper {
+  position: fixed;
+  top: -2px;
+  right: 0;
+  border-left: 1px solid rgb(234, 234, 234);
+  background-color: white;
+  padding: 10px;
+  z-index: 10;
+  width: 400px;
+  height: 98vh;
+  .empty{
+    
+    text-align: center;
+    .icon{
+      font-size: 180px;
+    }
+    h2{
+      color:$--secondary;
+      font-size: 50px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    p{
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+ul{
+  list-style: none;
+}
+.title{
+  color: $--secondary;
+  text-align: center;
+}
+.buttons{
+  text-align: center;
+ button{
+  margin-top: 20px;
+ }
+}
+button{
+  margin-right: 5px;
+  border: none;
+  border-radius: 20px;
+  width: 180px;
+  height: 35px;
+}
+.btn1{
+  background-color: $--pripmary;
+}
+.btn2{
+  background-color: $--secondary;
+  color: white;
+}
+.cart__innerWrapper {
+  height: 82vh;
+  overflow-y: auto;
+}
+
+.Cart__cartTotal {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-times-circle {
+  color: gray;
+  transition: transform 0.2s linear;
+}
+
+.fa-times-circle:hover {
+  transform: rotate(90deg);
+}

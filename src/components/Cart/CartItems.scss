@@ -1,0 +1,33 @@
+$--pripmary : yellow;
+$--secondary : purple;
+.CartItem__item {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 20px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+li img {
+  height: 100%;
+  width: 100px;
+  object-fit: cover;
+}
+.CartItem__item:nth-child(1) {
+  border-top: 1px solid gray;
+}
+
+.CartItem__button {
+  margin-left: auto;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: $--pripmary;
+}
+
